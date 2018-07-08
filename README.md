@@ -17,4 +17,4 @@ The full analysis, design, and testing are detailed in the pdf file, [Report.pdf
 This project is licensed under the [Creative Commons License Attribution-ShareAlike 3.0 Unported License](https://creativecommons.org/licenses/by-sa/3.0/). Permissions beyond the scope of this license may be available under Goldsmiths, University of London Copyright Licenses.
 
 ## Acknowledgements
-Sincere thanks go to Jamie Forth and Edward Anstead who served as my project supervisor. He provided his time outside of lessons to give advice throughout my year and was extremely fundamental in helping me understand the approches to problems in the project.
+Sincere thanks go to Jamie Forth who served as our project supervisor. He provided very useful insights and help guided us through the project despite the University Pensions' Strikes.
