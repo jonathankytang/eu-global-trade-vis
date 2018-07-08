@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--    Character Encoding-->
+    <meta charset="utf-8">
+    
+    <!--    IE compatability-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!--    Mobile Responsiveness to Viewport-->
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1">
+    
+    <!--    Favicon-->
+    <link rel="shortcut icon" href="./Data/Pictures/favicon.png">
+    
+    <!--    Style sheet-->
+    <link rel="stylesheet" href="styleMain.css">
+    
+    <!--    Page Title-->
+    <title>EU Trade Analysis</title>
+
+    <!--    p5.js Library -->
+    <script src="lib/p5.min.js"></script>
+
+    <!--    jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!--    Font Awesome Icons Styling-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+    <!--    Main Sketch File -->
+    <script src="sketchMain.js"></script>
+
+    <!--    Constructor Functions -->
+    <script src="tableData.js"></script>
+    <script src="tableInfo.js"></script>
+
+    <!--    Google Map API-->
+    <script src="maps.js"></script>
+
+    <!--    Initial styling of page-->
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <!--    Back to home button-->
+    <div id="home-button" class="nicebox2">
+        <a href="index.html" class="button"><i id="home-icon" class="fas fa-home"></i></a>
+    </div>
+    
+    <!--    Data title, units, color scale and year drop down-->
+    <div id="controls" class="nicebox">
+        
+        <div>
+            <span id="file-name"></span>
+            <select id="date-select"></select>
+        </div>
+        
+        <span id="file-name2"></span>
+        
+        <!--        The Modal -->
+        <div id="myModal" class="modal">
+
+            <!--        Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+            </div>
+
+        </div>
+        
+        <!--        https://www.w3schools.com/css/css_tooltip.asp-->
+        <div class="help-hover"><i class="fas fa-question-circle"></i>
+            <span class="help-hover-text">Hover over a country to see it's value and where it lies in relation to all other countries on the scale. <br><br> Scroll to zoom in and out of the map. <br><br> Click on a country to compare this year's data with all years and other countries.</span>
+        </div>
+        
+        <!--        Min and max values of data-->
+        <div id="legend">
+            <div id="legendMin">min</div>
+            <div class="color-key"><span id="data-caret">&#x25c6;</span></div>
+            <div id="legendMax">max</div>
+        </div>
+        
+    </div>
+    
+    <!--    Mouse hover over country and corresponding value-->
+    <div id="data-box" class="nicebox">
+        <label id="data-label" for="data-value"></label>
+        <span id="data-value"></span>
+    </div>
+    
+    <!--    Data info box-->
+    <div id="info-button" class="nicebox2">
+        <a id="myBtn" class="button"><i id="info-icon" class="fas fa-info-circle"></i></a>
+    </div>
+    
+    <!--    Google Map-->
+    <div id="map"></div>
+    
+</body>
+
+</html>
