@@ -1,0 +1,241 @@
+/*Font Import*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/*HTML and body styling*/
+
+html,
+body {
+    height: 370px;
+    padding: 0;
+    margin: 0;
+}
+
+/*Nice styling for the containers*/
+
+.nicebox2 {
+    position: absolute;
+    text-align: center;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 13px;
+    z-index: 5;
+    box-shadow: 0 4px 6px -4px #333;
+    padding: 5px 10px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(245, 245, 245, 1) 100%);
+    border: rgb(229, 229, 229) 1px solid;
+}
+
+/* styling for the top section*/
+
+#top {
+    height: 10.4vh;
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-height: 900px) {
+    #top {
+        padding-bottom: 20px;
+    }
+}
+
+#back-button {
+    top: 10px;
+    left: 10px;
+    width: 65px;
+    height: 65px;
+    color: black;
+}
+
+#back-button:hover {
+    background: #063796;
+    color: #FDCC2F;
+    border: #063796 1px solid;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6em;
+    margin: 0px;
+}
+
+@media (max-width: 1050px) {
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
+#graphTitle {
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-family: "Roboto", "Arial", sans-serif;
+    display: inline;
+}
+
+tr {
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+li {
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+#title {
+    float: left;
+    margin-top: 15px;
+    margin-left: 110px;
+    /* adapts size of nicebox for title length */
+    max-width: 1200px;
+    height: 65px;
+}
+
+/* styling fore the left section */
+
+#left {
+    margin-left: 10px;
+    max-width: 50%;
+    padding-right: 0px;
+    margin-right: 0px;
+    display: inline-block;
+}
+
+#countryFlag {
+    /*    float: left;*/
+    margin-left: 1px;
+    max-width: 175px;
+}
+
+#Name {
+    float: left;
+    margin-top: -157px;
+    margin-left: 190px;
+    height: 55px;
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+#countryName {
+    line-height: 15px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+@media (max-width: 1302px) {
+    #countryName {
+        font-size: 30px;
+    }
+}
+
+#Value {
+    float: left;
+    margin-top: -100px;
+    margin-left: 190px;
+    height: 55px;
+    font-size: 20px;
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+/* styling fore the right section */
+
+#right {
+    float: right;
+}
+
+#nationalAccounts {
+    width: 500px;
+}
+
+/* table styling for the national accounts */
+
+tr {
+    text-align: left;
+}
+
+/* styling for the graph iframe */
+
+iframe {
+    margin-top: -500px;
+    margin-right: 10px;
+}
+
+a.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    font-weight: normal;
+    text-decoration: none;
+    color: initial;
+    cursor: pointer;
+}
+
+/* styling for checkbox display */
+
+li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+/* removed extra canvas */
+
+#defaultCanvas0 {
+    display: none;
+}
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 18vh;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

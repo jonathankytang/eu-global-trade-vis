@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--    Character Encoding-->
+    <meta charset="utf-8">
+    
+    <!--    IE compatability-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!--    Mobile Responsiveness to Viewport-->
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1">
+    
+    <!--    Favicon-->
+    <link rel="shortcut icon" href="./Data/Pictures/favicon.png">
+    
+    <!--    Main Style sheet-->
+    <link rel="stylesheet" href="style/styleClicked.css">
+    
+    <!--    Country Flags-->
+    <link rel="stylesheet" href="./Data/Flags/assets/docs.css">
+    
+    <!--    Country Flags Style sheet-->
+    <link rel="stylesheet" href="./Data/Flags/css/flag-icon.css">
+    
+    <!--    Page Title-->
+    <title>Country View</title>
+
+    <!-- p5.js Library -->
+    <script src="lib/p5.min.js"></script>
+
+    <!-- Load d3.js and c3.js -->
+    <link href="lib/c3.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="lib/c3.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome Icons Styling-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+    <!-- Main Sketch File -->
+    <script src="sketch/sketchClicked.js"></script>
+
+    <!-- Constructor Functions -->
+    <script src="class/clickedView.js"></script>
+    <script src="class/countryProfile.js"></script>
+    <script src="class/graphData.js"></script>
+    <script src="class/lineplotRender.js"></script>
+
+    <!--    Initial styling of page-->
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="top">
+        
+        <!--        Back to map button-->
+        <div id="back-button" class="nicebox2">
+            <a href="main.html" class="button"><i id="back-icon" class="fas fa-arrow-left"></i></a>
+        </div>
+        
+        <!--        Data title-->
+        <div id="title">
+            <h1 id="graphTitle"></h1>
+            <h1 id="TradeFlow"></h1>
+        </div>
+        
+    </section>
+    
+    <section id="left">
+        
+        <!--        Country Flag-->
+        <div id="countryFlag">
+            <div class="flag-wrapper">
+            </div>
+        </div>
+        
+        <!--        Country Name-->
+        <div id="Name">
+            <h2 id="countryName"></h2>
+        </div>
+        
+        <!--        Country Value-->
+        <div id="Value">
+            <h2 id="countryVal"></h2>
+        </div>
+        
+        <p>Select countries to compare on the graph</p>
+        <!--        Checkboxes of all available countries to compare-->
+        
+        <div id="checkbox-container"></div>
+        
+    </section>
+    
+    <section id="right">
+        
+        <!--        Country's national accounts-->
+        <div id="nationalAccounts">
+            <h2><b>National Accounts</b></h2>
+            <table style="width:100%" id="nationalAccountsTable">
+            </table>
+        </div>
+        
+    </section>
+    
+    <!--    Graph of data-->
+    <div id="chart"></div>
+    
+</body>
+
+</html>
