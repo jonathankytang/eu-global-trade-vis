@@ -1,0 +1,178 @@
+/*Font Import*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/*HTML and body styling*/
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/*Nice styling for the containers*/
+
+.nicebox {
+    text-align: center;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 15px;
+    z-index: 5;
+    box-shadow: 0 4px 6px -4px #333;
+    padding: 10px 15px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(245, 245, 245, 1) 100%);
+    border: rgb(229, 229, 229) 1px solid;
+}
+
+#index {
+    width: 100%;
+    max-height: 100%;
+    text-align: center;
+    padding-top: 25vh;
+}
+
+#index-title {
+    margin-bottom: 50px;
+}
+
+#index-title h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5em;
+}
+
+
+/*Styling for the dropdown*/
+
+#selector {
+    padding-bottom: 50px;
+}
+
+select {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 1.19em;
+    color: #063796;
+    border-color: #063796;
+    outline: none;
+    background: transparent;
+}
+
+/*Styling for the "go to map" button*/
+
+#index-button {
+    display: none;
+}
+
+.button {
+    text-decoration: none;
+    color: initial;
+}
+
+.button:hover {
+    background: #063796;
+    color: #FDCC2F;
+    cursor: pointer;
+}
+
+img {
+    width: 150px;
+}
+
+/* removed extra canvas */
+
+#defaultCanvas0 {
+    display: none;
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: block;
+}
+
+/* Modal background */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 27vh;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+#abstract-content {
+    color: black;
+}
+
+/* Modal Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#on-screen-abstract {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #063796;
+}
+
+#on-screen {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
+
+/*Footer links events styling*/
+
+.footer-links:link {
+    color: #063796;
+}
+
+.footer-links:visited {
+    color: #063796;
+}
+
+.footer-links:hover {
+    color: #FDCC2F;
+    text-decoration: underline;
+    cursor: pointer;
+}
