@@ -8,7 +8,7 @@ All the html files sit in the top directories, with all libraries, classes, styl
 
 ## Working Version
 See the working version below:
-<http://doc.gold.ac.uk/~jtang002/year1/Intro-to-Prog/eu-global-trade-vis/>
+<https://jonathankytang.github.io/eu-global-trade-vis/>
 
 ## Project Report
 The full analysis, design, and testing are detailed in the pdf file, [Report.pdf](https://github.com/jonathankytang/eu-global-trade-vis/blob/master/Report.pdf).
